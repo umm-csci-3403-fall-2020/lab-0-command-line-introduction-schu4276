@@ -7,7 +7,7 @@ NUMBER=$1
 # the directory specified by the user
 tar -xzf NthPrime.tgz 
 # Going into the NthPrimeDirectory that the file was extracted to
-#and compiling the C program that was extracted, generating a executable called NthPrime
+# and compiling the C program that was extracted, generating a executable called NthPrime
 cd NthPrime || exit 
 gcc main.c nth_prime.c nth_prime.h -o NthPrime
 ./NthPrime "$NUMBER" 
